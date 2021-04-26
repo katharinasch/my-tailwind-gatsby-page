@@ -5,9 +5,9 @@
  */
 
 
-require("dotenv").config({
-  path: `.env`,
-});
+// require("dotenv").config({
+//   path: `.env`,
+// });
 
 module.exports = {
   plugins: [
@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: "gatsby-source-strapi",
       options: {
-        apiURL: process.env.API_URL || "http://localhost:1337",
+        apiURL: "https://backend-strapi-for-gatsby.herokuapp.com",
         contentTypes: ["articles"],
         singleTypes: [`homepage`, `global`],
         queryLimit: 1000,
