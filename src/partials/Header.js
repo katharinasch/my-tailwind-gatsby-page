@@ -1,6 +1,4 @@
-import React, { Fragment} from 'react';
-import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import React from 'react';
 import profile from '../images/profile-picture.jpg'
 import swal from 'sweetalert';
 
@@ -40,7 +38,7 @@ export default function Header() {
           </p>
           <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div className="rounded-md shadow">
-              <a
+              <a role="button" tabIndex={0}
                 className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                 onClick={SweetAlert}
               >

@@ -1,10 +1,6 @@
 import React from 'react';
-
-
 import Footer from '../partials/Footer';
 import Navbar from '../partials/Navbar';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
-
 import { AnnotationIcon, AcademicCapIcon, LightningBoltIcon, CodeIcon } from '@heroicons/react/outline'
 
 const features = [
@@ -82,7 +78,7 @@ function About() {
                           ))}
                         </div>
                         <div className="text-right mt-10">
-                            <a href={feature.link}  target="_blank" style={{color: "#6466F1"}} >
+                            <a href={feature.link}  target="_blank"  rel="noreferrer" style={{color: "#6466F1"}} >
                                 {feature.linkname}
                             </a>
                         </div>
